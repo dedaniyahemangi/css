@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+
+		.main
+		{
+			
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.main .part1
+		{
+			height: 200px;
+			width: 50%;
+			background: lightblue;
+		}
+
+		.main .part2
+		{
+			height: 200px;
+			width: 50%;
+			background: lightcoral;
+		}
+
+
+		@media (max-width:1100px)
+		{
+			.main .part1 {width: 20%;}
+			.main .part2 {width: 80%;}
+		}
+
+			@media (max-width:900px)
+		{
+			.main .part1 {width: 60%;}
+			.main .part2 {width: 40%;}
+		}
+
+
+			@media (max-width:700px)
+		{
+			.main .part1 {width: 90%;}
+			.main .part2 {width: 10%;}
+		}
+
+			@media (max-width:500px)
+		{
+			.main .part1 {width: 100%;}
+			.main .part2 {width: 100%;}
+		}
+	</style>
+</head>
+<body>
+
+	<div class="main">
+
+		<div class="part1"></div>
+		<div class="part2"></div>
+		
+	</div>
+
+</body>
+</html>

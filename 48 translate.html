@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.x 
+		{
+			height: 50px;
+			width: 50px;
+			border-radius: 50%;
+			background:linear-gradient(lightblue,lightcoral);
+			margin-top: 10px;
+			animation: move 1s infinite alternate-reverse;
+			position: absolute;
+		}
+
+		@keyframes move
+		{
+			from{transform: translate(0,0);}
+			to{transform: translate(90px,90px);}
+		}
+	</style>
+</head>
+<body>
+
+	<div class="x"></div>
+	<div class="x"></div>
+	<div class="x"></div>
+	<div class="x"></div>
+	<div class="x"></div>
+	<div class="x"></div>
+	<div class="x"></div>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+28background-clip.html
+Today
+9:19 AM
+
+nirav patel uploaded an item
+HTML
+28background-clip.html
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+
+		body 
+		{
+			background: linear-gradient(red,blue);
+			height: 100vh;
+		}
+
+		*{box-sizing: border-box;}
+		.x 
+		{
+			height: 150px;
+			width: 150px;
+			background: transparent;
+			margin: 250px auto;
+			box-shadow: 0 0 30px gray inset;
+			padding: 15px;
+			border: 10px solid transparent;
+
+			border-top: 10px solid red;
+
+			border-radius: 50%;
+
+			
+			animation: preloader 1s linear infinite;
+		}
+
+		.y 
+		{
+			height: 100px;
+			width: 100px;
+			background: transparent;
+			padding: 15px;
+			box-shadow: 0 0 30px gray inset;
+			border: 10px solid transparent;
+			border-top: 10px solid green;
+			border-radius: 50%;
+
+			animation: preloader 2s linear infinite;
+			
+		}
+
+		.z 
+		{
+			height: 50px;
+			width: 50px;
+			background: transparent;
+			border: 10px solid transparent;
+			border-top: 10px solid blue;
+			box-shadow: 0 0 30px gray inset;
+			border-radius: 50%;
+			animation: preloader 3s linear infinite;
+			
+		}
+
+		@keyframes preloader
+		{
+
+			from{transform: rotate(0deg);}
+			to{transform: rotate(360deg);}
+		}
+	</style>
+</head>
+<body>
+
+	<div class="x">
+
+		<div class="y">
+
+			<div class="z">
+		
+			</div>
+		
+		</div>
+		
+	</div>
+
+</body>
+</html>

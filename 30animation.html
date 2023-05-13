@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		div 
+		{
+			height: 200px;
+			width: 200px;
+			background: lightblue;
+			margin: 200px auto;
+
+			/*animation-name: xyz;
+			animation-duration: .2s;
+			animation-iteration-count: infinite;*/
+
+			animation: xyz 3s infinite;
+		}
+
+		@keyframes xyz
+		{
+			/*from{background: lightblue;}
+			to{background: coral;}*/
+
+			0%{background: lightblue;}
+			20%{background: red;transform: translateX(-300px);}
+			40%{height:50px;width:50px;background: url(https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom1.jpg);;transform: rotate(360deg);}
+			60%{background: yellow;border-radius: 50%}
+			80%{background: pink;}
+			100%{background: purple;}
+		}
+
+	</style>
+</head>
+<body>
+
+	<div>
+		
+	</div>
+
+</body>
+</html>

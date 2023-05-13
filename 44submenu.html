@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		.submenu
+		{
+			display:none;
+			position: absolute;
+			left:100px;
+
+			background: lightgray;
+		}
+		.drop-down:hover .submenu
+		{
+			display:block;
+		}
+
+		ul
+		{
+			margin: 0;
+			padding:0;
+		}
+
+		.drop-down
+		{
+			list-style: none;
+			display: inline;
+		}
+
+		.submenu li
+		{
+			list-style-type: none;
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<ul>
+		<li class="drop-down"><a href="">Home</a></li>
+		<li class="drop-down"><a href="">About</a></li>
+
+		<li class="drop-down"><a href="">Services</a>
+
+			
+		<ul class="submenu">
+			<li><a href="">service 1</a></li>
+			<li><a href="">service 1</a></li>
+			<li><a href="">service 1</a></li>
+			<li><a href="">service 1</a></li>
+		</ul>
+
+
+
+
+		</li>
+
+
+		<li class="drop-down"><a href="">Contact</a></li>
+	</ul>
+
+</body>
+</html>

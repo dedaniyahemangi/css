@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+
+		*{box-sizing: border-box;}
+		.header
+		{
+			height: auto;
+			background: red;
+			display: flex;
+			flex-wrap: wrap;
+
+		}
+
+		.header .l 
+		{
+			height: 50px;
+			width: 50%;
+			background: gray;
+		}
+		.header .r 
+		{
+			height: 50px;
+			width: 50%;
+			background: lightgray;
+			text-align:  right;
+		}
+
+		.sub_header
+		{
+			height: auto;
+			background: ;
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.sub_header .x
+		{
+			height: 150px;
+			width: 33.33%;
+			border:2px solid;
+		}
+
+		input 
+		{
+			height: 70px;
+			width: 400px;
+
+			border:1px solid lightgray;
+		}
+
+		input:focus
+		{
+			outline: none;
+		}
+
+
+
+		@media(max-width: 1100px)
+		{
+			.header .l {width: 20%;}
+			.header .r {width: 80%;}
+
+			.sub_header .a {width: 100%;}
+			.sub_header .b {width: 50%;}
+			.sub_header .c {width: 50%;}
+		}
+
+		@media(max-width: 900px)
+		{
+			.header .l {width: 60%;}
+			.header .r {width: 40%;}
+
+			.sub_header .a {width: 10%;}
+			.sub_header .b {width: 80%;}
+			.sub_header .c {width: 10%;}
+		}
+
+		@media(max-width: 700px)
+		{
+			.header .l {width: 10%;}
+			.header .r {width: 90%;}
+
+			.sub_header .a {width: 100%;}
+			.sub_header .b {width: 40%;}
+			.sub_header .c {width: 60%;}
+		}
+
+		@media(max-width: 500px)
+		{
+			.header .l {width: 100%;}
+			.header .r {width: 100%;}
+
+			.sub_header .x {width: 100%;}
+			
+			
+		}
+	</style>
+</head>
+<body>
+
+	<div class="header">
+		<div class="l">x</div>
+		<div class="r">y</div>
+		
+	</div>
+
+
+	<div class="sub_header">
+		<div class="x a x1">
+			
+			<input type="text" name="">
+		</div>
+		<div class="x b x1"></div>
+		<div class="x c x1"></div>
+		
+	</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+
+		*{box-sizing: border-box;}
+		
+		.main
+		{
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		}
+		.main .x 
+		{
+			border: 5px solid blueviolet;
+		}
+
+
+		@media(min-width: 500px)
+		{
+			.main {display:flex ;flex-direction: column;}
+		}
+
+		@media(min-width: 768px)
+		{
+			.main {display:grid;grid-template-columns: 1fr 1fr 6fr 6fr 1fr;}
+		}
+
+
+		@media(min-width: 992px)
+		{
+			.main {display:grid;grid-template-columns: 1fr 1fr;}
+		}
+
+
+		@media(min-width: 1200px)
+		{
+			.main {display:grid;grid-template-columns: 5fr 3fr 2fr;}
+		}
+
+		@media(min-width: 1400px)
+		{
+			.main {display:grid;grid-template-columns: 1fr 1fr 1fr 1fr 1fr;}
+		}
+	</style>
+</head>
+<body>
+
+	<div class="main">
+		<div class="x">p1</div>
+		<div class="x">p2</div>
+		<div class="x">p3</div>
+		<div class="x">p4</div>
+		<div class="x">p5</div>
+	</div>
+
+</body>
+</html>
